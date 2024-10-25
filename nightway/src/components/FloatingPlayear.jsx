@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     fontSize: FontSize.lg,
     color: colors.textPrimary,
     fontWeight:"400"
-    
+  
   },
   artist: {
     // fontSize: FontSize.sm,
