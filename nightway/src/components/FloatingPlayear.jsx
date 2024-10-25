@@ -1,3 +1,5 @@
+import { useSharedValue } from 'react-native-reanimated';
+import { Slider } from 'react-native-awesome-slider';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { colors } from '../constants/colors'
@@ -6,8 +8,14 @@ import { GotoNextButton, GotoPreviousButton, PlayPauseButtton } from './PlayearC
 
 const imageUrl="https://linkstorage.linkfire.com/medialinks/images/ebb8cde3-1f3b-4b3a-bbf5-e4a1c131da1e/artwork-440x440.jpg"
 const FloatingPlayear = () => {
+  const progress = useSharedValue(30);
+  const min = useSharedValue(0);
+  const max = useSharedValue(100);
   return (
-    <TouchableOpacity style={styles.Container} activeOpacity={0.85}>
+
+   
+    <View>
+          <TouchableOpacity style={styles.Container} activeOpacity={0.85}>
           
       <Image source={{ uri: imageUrl }} style={styles.coverImage} />
      
@@ -21,6 +29,7 @@ const FloatingPlayear = () => {
         <GotoNextButton/>
       </View>
     </TouchableOpacity>
+ </View>
   )
 }
 export default FloatingPlayear
