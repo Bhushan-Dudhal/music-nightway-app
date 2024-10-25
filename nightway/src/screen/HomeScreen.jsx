@@ -1,10 +1,12 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import Header from '../components/Header'
 import { colors } from '../constants/colors'
 import { fontsFamilies } from '../constants/fonts'
 import { FontSize, spacing } from '../constants/dimensions'
 import SongCard from '../components/SongCard'
+import SongCardWithCategory from '../components/SongCardWithCategory'
+import FloatingPlayear from '../components/FloatingPlayear'
 // import { fontsFamilies } from '../constants/fonts'
 
 
@@ -13,8 +15,14 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <Header />
-      <Text style={styles.hedingText}>Recommended for your </Text>
-      <SongCard/>
+    
+
+      <FlatList data={[1, 2, 3, 4, 5, 6,7]} renderItem={SongCardWithCategory}
+        contentContainerStyle={{
+        paddingBottom:200
+      }}
+      />
+  <FloatingPlayear/>
       
     </View>
   )
@@ -32,7 +40,8 @@ const styles = StyleSheet.create({
     color: colors.textPrimary,
     fontFamily: "Gilroy-Light",
     fontWeight: "900",
-    marginVertical:spacing.lg
+    marginVertical: spacing.lg,
+    paddingHorizontal:spacing.lg
   }
   
 })
