@@ -37,7 +37,7 @@ export default FloatingPlayear
 const styles = StyleSheet.create({
     coverImage:{
         width:60,
-        height:60,
+        height:60
     },
     Container: {
       flexDirection: "row",
