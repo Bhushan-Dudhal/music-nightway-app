@@ -1,13 +1,13 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { colors } from '../constants/colors'
-import { FontSize, spacing } from '../constants/dimensions'
-import { GotoPreviousButton } from './PlayearControls'
+import { FontSize, iconSizes, spacing } from '../constants/dimensions'
+import { GotoNextButton, GotoPreviousButton, PlayPauseButtton } from './PlayearControls'
 
 const imageUrl="https://linkstorage.linkfire.com/medialinks/images/ebb8cde3-1f3b-4b3a-bbf5-e4a1c131da1e/artwork-440x440.jpg"
 const FloatingPlayear = () => {
   return (
-    <View style={styles.Container}>
+    <TouchableOpacity style={styles.Container} activeOpacity={0.85}>
           
       <Image source={{ uri: imageUrl }} style={styles.coverImage} />
      
@@ -16,17 +16,19 @@ const FloatingPlayear = () => {
           <Text style={styles.artist}>Egzod,Neoni, </Text>
       </View>
       <View style={styles.PlayearControlContainer}>
-        <GotoPreviousButton/>
+        <GotoPreviousButton  />
+        <PlayPauseButtton />
+        <GotoNextButton/>
       </View>
-    </View>
+    </TouchableOpacity>
   )
 }
 export default FloatingPlayear
 
 const styles = StyleSheet.create({
     coverImage:{
-        width:70,
-        height:70,
+        width:60,
+        height:60,
     },
     Container: {
       flexDirection: "row",
@@ -49,6 +51,9 @@ const styles = StyleSheet.create({
     color:colors.textSecondary,
   },
   PlayearControlContainer:{
-    
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 20,
+    paddingRight:spacing.lg
   }
 })
