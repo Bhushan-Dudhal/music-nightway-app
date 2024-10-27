@@ -17,7 +17,7 @@ const FloatingPlayear = () => {
     <View>
       <View>
          <Slider
-      style={styles.container}
+      style={styles.Container}
       progress={progress}
       minimumValue={min}
       maximumValue={max}
