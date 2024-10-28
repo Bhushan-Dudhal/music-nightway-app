@@ -43,5 +43,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize:FontSize.md
         
+    },
+    new: {
+        
     }
 })
