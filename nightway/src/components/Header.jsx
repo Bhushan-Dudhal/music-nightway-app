@@ -32,5 +32,8 @@ const styles = StyleSheet.create({
     
         
   },
+  new: {
+    
+  }
   
 })
