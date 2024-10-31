@@ -36,5 +36,8 @@ const styles = StyleSheet.create({
     marginVertical: spacing.lg,
     paddingHorizontal:spacing.lg
   },
+  new1: {
+       
+     }
      
 })
