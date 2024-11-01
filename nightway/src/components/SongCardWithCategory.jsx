@@ -42,6 +42,9 @@ const styles = StyleSheet.create({
   },
   name: {
     
+  },
+  one: {
+    
   }
   
      
