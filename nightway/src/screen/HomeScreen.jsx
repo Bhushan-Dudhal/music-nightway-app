@@ -22,7 +22,8 @@ const HomeScreen = () => {
         paddingBottom:200
       }}
       />
-  <FloatingPlayear/>
+      <FloatingPlayear />
+      <Text></Text>
       
     </View>
   )

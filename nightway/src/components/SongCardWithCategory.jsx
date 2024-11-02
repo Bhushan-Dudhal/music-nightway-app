@@ -15,7 +15,6 @@ const SongCardWithCategory = () => {
           paddingHorizontal:spacing.lg
         }}
       />
-     <Text style={styles.name}></Text>
 
     </View>
   )
@@ -37,15 +36,7 @@ const styles = StyleSheet.create({
     marginVertical: spacing.lg,
     paddingHorizontal:spacing.lg
   },
-  new1: {
-       
-  },
-  name: {
-    
-  },
-  one: {
-    
-  }
+  
   
      
 })
