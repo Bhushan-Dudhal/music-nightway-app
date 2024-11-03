@@ -15,7 +15,9 @@ const FloatingPlayear = () => {
 
    
     <View>
-      <View>
+      <View style={{
+        zIndex:1,
+      }}>
          <Slider
       style={styles.Container}
       progress={progress}
@@ -25,7 +27,10 @@ const FloatingPlayear = () => {
     maximumTrackTintColor:colors.MaximumTintColor,
     minimumTrackTintColor: colors.minimumTintColor,
     
-  }} 
+          }} 
+          containerStyle={{
+            height:10
+          }}
         />
       </View>
           <TouchableOpacity style={styles.Container} activeOpacity={0.85}>
@@ -49,8 +54,9 @@ export default FloatingPlayear
 
 const styles = StyleSheet.create({
     coverImage:{
-        width:50,
-        height:50
+        width:60,
+    height: 60,
+        resizeMode:"cover"
     },
     Container: {
       flexDirection: "row",
