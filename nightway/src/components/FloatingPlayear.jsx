@@ -8,9 +8,9 @@ import { GotoNextButton, GotoPreviousButton, PlayPauseButtton } from './PlayearC
 
 const imageUrl="https://linkstorage.linkfire.com/medialinks/images/ebb8cde3-1f3b-4b3a-bbf5-e4a1c131da1e/artwork-440x440.jpg"
 const FloatingPlayear = () => {
-  const progress = useSharedValue(30);
+  const progress = useSharedValue(0.2);
   const min = useSharedValue(0);
-  const max = useSharedValue(100);
+  const max = useSharedValue(1);
   return (
 
    
@@ -19,7 +19,7 @@ const FloatingPlayear = () => {
         zIndex:1,
       }}>
          <Slider
-      style={styles.Container}
+      style={styles.SliderContainer}
       progress={progress}
       minimumValue={min}
       maximumValue={max}
@@ -28,9 +28,11 @@ const FloatingPlayear = () => {
     minimumTrackTintColor: colors.minimumTintColor,
     
           }} 
-          containerStyle={{
-            height:10
-          }}
+          containerStyle={{}}
+          renderBubble={()=>
+          <View/>
+          }
+        
         />
       </View>
           <TouchableOpacity style={styles.Container} activeOpacity={0.85}>
