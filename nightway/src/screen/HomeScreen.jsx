@@ -43,6 +43,9 @@ const styles = StyleSheet.create({
     fontWeight: "900",
     marginVertical: spacing.lg,
     paddingHorizontal:spacing.lg
+  },
+  Text: {
+    
   }
   
 })
