@@ -46,5 +46,8 @@ const styles = StyleSheet.create({
     },
     new: {
         
+    },
+    data2: {
+        
     }
 })

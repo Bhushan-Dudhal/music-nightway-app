@@ -26,5 +26,8 @@ export default App
 const styles = StyleSheet.create({
   contanear: {
     
+  },
+  new: {
+    
   }
 })
