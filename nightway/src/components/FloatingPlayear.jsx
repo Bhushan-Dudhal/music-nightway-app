@@ -29,9 +29,8 @@ const FloatingPlayear = () => {
     
           }} 
           containerStyle={{}}
-          renderBubble={()=>
-          <View/>
-          }
+          renderBubble={() => <View />}
+         
         
         />
       </View>
@@ -86,8 +85,7 @@ const styles = StyleSheet.create({
     gap: 20,
     paddingRight:spacing.lg
   },
-  Container: {
-    
-  }
+  
+ 
  
 })

@@ -1,10 +1,10 @@
-import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { FlatList, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Header from '../components/Header'
 import { colors } from '../constants/colors'
-import { fontsFamilies } from '../constants/fonts'
+// import { fontsFamilies } from '../constants/fonts'
 import { FontSize, spacing } from '../constants/dimensions'
-import SongCard from '../components/SongCard'
+// import SongCard from '../components/SongCard'
 import SongCardWithCategory from '../components/SongCardWithCategory'
 import FloatingPlayear from '../components/FloatingPlayear'
 // import { fontsFamilies } from '../constants/fonts'
@@ -23,7 +23,6 @@ const HomeScreen = () => {
       }}
       />
       <FloatingPlayear />
-      <Text></Text>
       
     </View>
   )

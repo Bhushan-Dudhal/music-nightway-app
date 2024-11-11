@@ -44,10 +44,5 @@ const styles = StyleSheet.create({
         fontSize:FontSize.md
         
     },
-    new: {
-        
-    },
-    data2: {
-        
-    }
+   
 })

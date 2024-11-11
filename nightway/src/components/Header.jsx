@@ -1,5 +1,4 @@
 import {StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
 import FontAwesome from "react-native-vector-icons/Ionicons"
 import { iconSizes, spacing } from '../constants/dimensions'
 import { colors } from '../constants/colors'
@@ -32,8 +31,6 @@ const styles = StyleSheet.create({
     
         
   },
-  data: {
-    
-  }
+
   
 })

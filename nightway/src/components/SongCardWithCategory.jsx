@@ -26,9 +26,7 @@ const styles = StyleSheet.create({
     container: {
       flex:1
   },
-
-
-     hedingText: {
+  hedingText: {
     fontSize: FontSize.xl,
     color: colors.textPrimary,
     fontFamily: "Gilroy-Light",
