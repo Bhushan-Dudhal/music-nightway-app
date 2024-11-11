@@ -1,13 +1,20 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import Animated, { getAnimatedStyle, useAnimatedStyle } from 'react-native-reanimated'
 
 const MovingText = () => {
+  const animatedStyle = useAnimatedStyle(() => {
+    return (
+      
+    )
+  })
   return (
-    <View>
+    <Animated.Text numberOfLines={1} style={[animatedStyle]
+    }>
       <Text>text</Text>
       <Text>text</Text>
 
-    </View>
+    </Animated.Text>
   )
 }
 
