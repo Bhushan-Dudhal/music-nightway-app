@@ -4,15 +4,13 @@ import Animated, { getAnimatedStyle, useAnimatedStyle } from 'react-native-reani
 
 const MovingText = () => {
   const animatedStyle = useAnimatedStyle(() => {
-    return (
-      
-    )
+                                                                            
   })
   return (
     <Animated.Text numberOfLines={1} style={[animatedStyle]
     }>
-      <Text>text</Text>
-      <Text>text</Text>
+      <Text style={styles.text}>text</Text>
+      <Text style={styles.text7}>text</Text>
 
     </Animated.Text>
   )
@@ -20,4 +18,9 @@ const MovingText = () => {
 
 export default MovingText
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  text7: {
+   
+  },
+
+})
