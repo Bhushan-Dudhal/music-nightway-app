@@ -85,5 +85,8 @@ const styles = StyleSheet.create({
     gap: 20,
     paddingRight:spacing.lg
   },
+  two: {
+    
+  }
 
   })
