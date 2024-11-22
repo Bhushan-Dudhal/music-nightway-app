@@ -18,9 +18,3 @@ const MovingText = () => {
 
 export default MovingText
 
-const styles = StyleSheet.create({
-  text7: {
-   
-  },
-
-})

@@ -1,4 +1,4 @@
-import { StyleSheet, TouchableOpacity } from "react-native"
+import {  TouchableOpacity } from "react-native"
 import { iconSizes } from "../constants/dimensions"
 import { colors } from "../constants/colors"
 
@@ -39,9 +39,5 @@ export const GotoNextButton = () => {
         </TouchableOpacity>
     )
 }
-
-const stylesc = StyleSheet.create({
-    
-})
 
 

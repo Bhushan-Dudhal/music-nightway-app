@@ -23,10 +23,9 @@ const App = () => {
 }
 
 export default App
-
-const styles = StyleSheet({
-  title: {
-    
-  }
+const style = StyleSheet.create({
+  
 })
+
+
 

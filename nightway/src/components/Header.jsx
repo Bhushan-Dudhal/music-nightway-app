@@ -31,9 +31,6 @@ const styles = StyleSheet.create({
     
         
   },
-  one: {
-    
-  }
-
+ 
   
 })
