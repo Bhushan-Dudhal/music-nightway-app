@@ -25,7 +25,7 @@ const App = () => {
 export default App
 const style = StyleSheet.create({
   title: {
-    
+    height:20
   }
 })
 
