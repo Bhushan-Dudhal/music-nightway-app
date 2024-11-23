@@ -1,9 +1,23 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import Animated, { getAnimatedStyle, useAnimatedStyle, useSharedValue } from 'react-native-reanimated'
+import { Easing, StyleSheet, Text, View } from 'react-native'
+import React, { useEffect } from 'react'
+import Animated, { getAnimatedStyle, useAnimatedStyle, useSharedValue, withDelay, withRepeat, withTiming } from 'react-native-reanimated'
 
-const MovingText = ({}) => {
-  const translateX=useSharedValue(0)
+const MovingText = ({text,animationThreshold,style}) => {
+  const translateX = useSharedValue(0);
+  const shouldAnimate = text.length > animationThreshold;
+  const textWidth = text.length * 3;
+
+  useEffect(() => {
+    if (!shouldAnimate) return;
+    translateX.value = withDelay(1000, withRepeat(withTiming(-textWidth, {
+      duration: 5000,
+      easing:Easing.linear
+    }),
+      -1,
+      true
+      
+    ))
+  },[])
   const animatedStyle = useAnimatedStyle(() => {
     return {
         transform:[{translateX:translateX.value}],
