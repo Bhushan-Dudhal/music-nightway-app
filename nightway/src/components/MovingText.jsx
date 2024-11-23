@@ -17,14 +17,14 @@ const MovingText = ({text,animationThreshold,style}) => {
       true
       
     ))
-  },[])
+  },[translateX,text,animationThreshold,textWidth])
   const animatedStyle = useAnimatedStyle(() => {
     return {
         transform:[{translateX:translateX.value}],
       }                                                                      
   })
   return (
-    <Animated.Text numberOfLines={1} style={[animatedStyle]
+    <Animated.Text numberOfLines={1} style={[animatedStyle,style]
     }>
       <Text style={styles.text}>text</Text>
       
@@ -35,6 +35,8 @@ const MovingText = ({text,animationThreshold,style}) => {
 export default MovingText
 
 const styles = StyleSheet.create({
-
+  title: {
+    height:20
+  }
 })
 
