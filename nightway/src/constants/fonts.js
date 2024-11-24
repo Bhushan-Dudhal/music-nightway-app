@@ -5,5 +5,6 @@ export const fontsFamilies = {
     regular: "Gilroy-Regular",
     bold: "Gilroy-Bold",
     semiBold: "Gilroy-SemiBold",
+    semibold:""
 
 }
