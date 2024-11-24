@@ -37,7 +37,8 @@ export default MovingText
 const styles = StyleSheet.create({
   title: {
     height: 20,
-    width:20
+    width: 20,
+    fontSize:20
   }
 })
 
