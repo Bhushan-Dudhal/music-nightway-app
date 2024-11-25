@@ -40,7 +40,7 @@ const FloatingPlayear = () => {
       <Image source={{ uri: imageUrl }} style={styles.coverImage} />
      
         <View style={styles.titleContainer}>
-          <MovingText text={"chaff and Dust Alan Walker"} style={styles.title}
+          <MovingText text={"chaff and Dust Alan Walker new"} style={styles.title}
           animationThreshold={20}
           />
         {/* <Text style={styles.title}>Mortals x </Text> */}
