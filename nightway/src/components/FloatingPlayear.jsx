@@ -5,6 +5,7 @@ import React from 'react'
 import { colors } from '../constants/colors'
 import { FontSize, iconSizes, spacing } from '../constants/dimensions'
 import { GotoNextButton, GotoPreviousButton, PlayPauseButtton } from './PlayearControls'
+import MovingText from './MovingText';
 
 const imageUrl="https://linkstorage.linkfire.com/medialinks/images/ebb8cde3-1f3b-4b3a-bbf5-e4a1c131da1e/artwork-440x440.jpg"
 const FloatingPlayear = () => {
@@ -39,7 +40,10 @@ const FloatingPlayear = () => {
       <Image source={{ uri: imageUrl }} style={styles.coverImage} />
      
         <View style={styles.titleContainer}>
-        <Text style={styles.title}>Mortals x </Text>
+          <MovingText text={"chaff and Dust Alan Walker"} style={styles.title}
+          animationThreshold={20}
+          />
+        {/* <Text style={styles.title}>Mortals x </Text> */}
           <Text style={styles.artist}>Egzod,Neoni, </Text>
       </View>
       <View style={styles.PlayearControlContainer}>
@@ -67,6 +71,10 @@ const styles = StyleSheet.create({
     titleContainer: {
       flex: 1,
       paddingHorizontal: spacing.sm,
+      overflow: "hidden",
+      marginLeft: spacing.sm,
+      marginRight:spacing.lg
+     
       // marginVertical:10
     },
   title: {

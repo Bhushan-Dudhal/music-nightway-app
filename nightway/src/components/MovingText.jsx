@@ -1,6 +1,6 @@
-import { Easing, StyleSheet, Text, View } from 'react-native'
+import {  StyleSheet, Text, View } from 'react-native'
 import React, { useEffect } from 'react'
-import Animated, { getAnimatedStyle, useAnimatedStyle, useSharedValue, withDelay, withRepeat, withTiming } from 'react-native-reanimated'
+import Animated, { Easing, getAnimatedStyle, useAnimatedStyle, useSharedValue, withDelay, withRepeat, withTiming } from 'react-native-reanimated'
 
 const MovingText = ({text,animationThreshold,style}) => {
   const translateX = useSharedValue(0);
@@ -24,9 +24,12 @@ const MovingText = ({text,animationThreshold,style}) => {
       }                                                                      
   })
   return (
-    <Animated.Text numberOfLines={1} style={[animatedStyle,style]
+    <Animated.Text numberOfLines={1} style={[animatedStyle, style, shouldAnimate && {
+      width: 9999,
+      paddingLeft:16
+    }]
     }>
-      <Text style={styles.text}>text</Text>
+    {text}
       
     </Animated.Text>
   )
@@ -35,11 +38,6 @@ const MovingText = ({text,animationThreshold,style}) => {
 export default MovingText
 
 const styles = StyleSheet.create({
-  title: {
-    height: 20,
-    width: 20,
-    fontSize: 20,
-    padding:20
-  }
+ 
 })
 
