@@ -5,11 +5,11 @@ import { FontSize, spacing } from '../constants/dimensions'
 
 
 const imageUrl="https://linkstorage.linkfire.com/medialinks/images/300f46c8-b0a0-4cea-a953-1e47342da5ca/artwork-440x440.jpg"
-const SongCard = () => {
+const SongCard = ({containerStyle,imageStyle}) => {
   return (
- <TouchableOpacity style={styles.container}>
-          <Image source={{ uri: imageUrl }} style={styles.coverImage} />
-          <Text style={styles.title}>Faster</Text>
+ <TouchableOpacity style={[styles.container,containerStyle]}>
+          <Image source={{ uri: imageUrl }} style={[styles.coverImage,imageStyle]} />
+          <Text style={styles.title} numberOfLines={1}>Faster </Text>
           <Text style={styles.artist}>Progressive House</Text>
           </TouchableOpacity>
   )
@@ -20,9 +20,8 @@ export default SongCard
 
 const styles = StyleSheet.create({
     container: {
-        height: 330,
-        width:250
-      
+       
+
     },
     coverImage: {
         height: 250,
