@@ -6,12 +6,20 @@ import { colors } from '../constants/colors'
 import { FontSize, iconSizes, spacing } from '../constants/dimensions'
 import { GotoNextButton, GotoPreviousButton, PlayPauseButtton } from './PlayearControls'
 import MovingText from './MovingText';
+import { useRoute,useNavigation } from '@react-navigation/native';
 
 const imageUrl="https://linkstorage.linkfire.com/medialinks/images/ebb8cde3-1f3b-4b3a-bbf5-e4a1c131da1e/artwork-440x440.jpg"
 const FloatingPlayear = () => {
+
+  const navigation = useNavigation();
+
   const progress = useSharedValue(0.2);
   const min = useSharedValue(0);
   const max = useSharedValue(1);
+
+  const handleOpenPlayerScreen = () => {
+   navigation.navigate("PLAYER_SCREEN")
+ }
   return (
 
    
@@ -35,7 +43,9 @@ const FloatingPlayear = () => {
         
         />
       </View>
-          <TouchableOpacity style={styles.Container} activeOpacity={0.85}>
+      <TouchableOpacity style={styles.Container} activeOpacity={0.85}
+      onPress={handleOpenPlayerScreen}
+      >
           
       <Image source={{ uri: imageUrl }} style={styles.coverImage} />
      

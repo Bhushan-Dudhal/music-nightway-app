@@ -7,9 +7,7 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
 import SongCard from '../components/SongCard'
 import FloatingPlayear from '../components/FloatingPlayear'
 
-
-
-const LikeScreen = () => {
+   const LikeScreen = () => {
   return (
       <View style={styles.container}>
           <View style={styles.headerContainer}> 
