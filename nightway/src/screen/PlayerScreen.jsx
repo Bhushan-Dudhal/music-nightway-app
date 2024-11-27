@@ -10,7 +10,7 @@ const PlayearScreen = () => {
     <View style={styles.container}>
       <View style={styles.headercontainer}>
         <TouchableOpacity>
- <AntDesign name={"arrowleft"} color={colors.iconPrimary}
+ <AntDesign name={"arrowleft"} color={colors.iconPrimary} 
                   size={iconSizes.md}/>
         </TouchableOpacity>
    </View>
