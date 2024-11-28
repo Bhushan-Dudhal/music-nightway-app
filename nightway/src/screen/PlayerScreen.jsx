@@ -26,7 +26,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
     height: 2,
     width: 2,
-    direction:'inherit'
+    direction: 'inherit',
+    width:1
     
   }
 })
