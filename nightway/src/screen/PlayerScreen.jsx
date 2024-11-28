@@ -25,7 +25,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.background,
     height: 2,
-    width:2
+    width: 2,
+    direction:'inherit'
     
   }
 })
