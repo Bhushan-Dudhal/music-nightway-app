@@ -6,6 +6,7 @@ import { FontSize, iconSizes, spacing } from '../constants/dimensions'
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
 import SongCard from '../components/SongCard'
 import FloatingPlayear from '../components/FloatingPlayear'
+import { baseGestureHandlerWithDetectorProps } from 'react-native-gesture-handler/lib/typescript/handlers/gestureHandlerCommon'
 
    const LikeScreen = () => {
   return (
@@ -66,7 +67,8 @@ const styles = StyleSheet.create({
         fontSize: FontSize.xl,
         color: colors.textPrimary,
         fontWeight: "700",
-        padding:spacing.lg
-        
+        padding: spacing.lg,
+        margin:2
+             
     }
 })
