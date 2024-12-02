@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
     height: 2,
     width: 2,
     direction: 'inherit',
-    width:1
+    width: 1,
+    margin:1
     
   }
 })
