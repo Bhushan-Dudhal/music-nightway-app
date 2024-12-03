@@ -67,8 +67,7 @@ const styles = StyleSheet.create({
         fontSize: FontSize.xl,
         color: colors.textPrimary,
         fontWeight: "700",
-        padding: spacing.lg,
-        margin:2
+        padding: spacing.lg
              
     }
 })

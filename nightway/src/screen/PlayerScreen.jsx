@@ -5,30 +5,34 @@ import AntDesign from 'react-native-vector-icons/AntDesign'
 import { iconSizes } from '../constants/dimensions'
 
 
-const PlayearScreen = () => {
+const PlayerScreen = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.headercontainer}>
+      <View style={styles.headerContainer}>
         <TouchableOpacity>
- <AntDesign name={"arrowleft"} color={colors.iconPrimary} 
-                  size={iconSizes.md}/>
+          <AntDesign name="arrowleft"  color={colors.iconPrimary}
+      size={iconSizes.md}
+          />
         </TouchableOpacity>
-   </View>
+        <Text style={styles.headerText}>Playing Now</Text>
+
+      </View>
     </View>
   )
 }
 
-export default PlayearScreen
+export default PlayerScreen
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.background,
-    height: 2,
-    width: 2,
-    direction: 'inherit',
-    width: 1,
-   
-    
+    backgroundColor:colors.background
+  },
+  headerContainer: {
+    flexBasis:"row"
+  },
+  headerText: {
+    fontSize: 18,
+    color:colors.textPrimary
   }
 })
