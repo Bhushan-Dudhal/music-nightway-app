@@ -6,6 +6,7 @@ import Feather from 'react-native-vector-icons/Feather'
 
 import { FontSize, iconSizes, spacing } from '../constants/dimensions'
 import { FlatList } from 'react-native-gesture-handler'
+import FloatingPlayear from '../components/FloatingPlayear'
 
 
 const PlayerScreen = () => {
@@ -46,9 +47,9 @@ const PlayerScreen = () => {
         <View>
 
           <TouchableOpacity style={styles.playPauseButton}>
-
+           <FloatingPlayear/>
           </TouchableOpacity>
-          
+
         </View>
 
       </View>
