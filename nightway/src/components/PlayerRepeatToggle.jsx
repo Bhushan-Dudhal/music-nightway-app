@@ -13,6 +13,7 @@ export default PlayerRepeatToggle
 
 const styles = StyleSheet.create({
     container: {
-        height:10
+        height: 10,
+        width:20
     }
 })
