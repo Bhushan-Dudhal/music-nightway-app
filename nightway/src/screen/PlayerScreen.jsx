@@ -123,7 +123,9 @@ const styles = StyleSheet.create({
   },
   repeatShuffleWrapper: {
     flexDirection: "row",
-    gap:spacing.md
+    gap: spacing.md,
+    width:20
+    
   }
   
 })
