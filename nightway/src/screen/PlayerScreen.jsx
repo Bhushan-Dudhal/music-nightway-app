@@ -7,6 +7,8 @@ import Feather from 'react-native-vector-icons/Feather'
 import { FontSize, iconSizes, spacing } from '../constants/dimensions'
 import { FlatList } from 'react-native-gesture-handler'
 import FloatingPlayear from '../components/FloatingPlayear'
+import PlayerRepeatToggle from '../components/PlayerRepeatToggle'
+import PlayerShuffleToggle from '../components/PlayerShuffleToggle'
 
 
 const PlayerScreen = () => {
@@ -40,15 +42,14 @@ const PlayerScreen = () => {
       </View>
 
       <View style={styles.playerControlContainer}>
-        <TouchableOpacity>
+        <TouchableOpacity style={styles.volumeWrapper}>
           <Feather name={isMute?"volume-2":"volume-x"} color={colors.iconSecondary} size={iconSizes.lg}/>
         </TouchableOpacity>
 
-        <View>
+        <View style={styles.repeatShuffleWrapper}>
 
-          <TouchableOpacity style={styles.playPauseButton}>
-           <FloatingPlayear/>
-          </TouchableOpacity>
+          <PlayerRepeatToggle />
+          <PlayerShuffleToggle/>
 
         </View>
 
@@ -111,6 +112,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
     
     justifyContent:"center"
+  },
+  playerControlContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginVertical:spacing.lg
+  },
+  volumeWrapper: {
+    flex: 1,
+  },
+  repeatShuffleWrapper: {
+    flexDirection: "row",
+    gap:spacing.md
   }
   
 })
