@@ -15,4 +15,8 @@ const PlayerProgressBar = () => {
 
 export default PlayerProgressBar
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+       
+     } 
+})
