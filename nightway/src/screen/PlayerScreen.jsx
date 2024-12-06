@@ -9,6 +9,7 @@ import { FlatList } from 'react-native-gesture-handler'
 import FloatingPlayear from '../components/FloatingPlayear'
 import PlayerRepeatToggle from '../components/PlayerRepeatToggle'
 import PlayerShuffleToggle from '../components/PlayerShuffleToggle'
+import PlayerProgressBar from '../components/PlayerProgressBar'
 
 
 const PlayerScreen = () => {
@@ -54,6 +55,8 @@ const PlayerScreen = () => {
         </View>
 
       </View>
+
+      <PlayerProgressBar/>
        
       </View>
   )
@@ -100,7 +103,7 @@ const styles = StyleSheet.create({
   artist: {
     fontSize: FontSize.md,
     color:colors.textSecondary
-
+ 
   },
   titleRowHeartContainer: {
     flexDirection: "row",
@@ -124,8 +127,9 @@ const styles = StyleSheet.create({
   repeatShuffleWrapper: {
     flexDirection: "row",
     gap: spacing.md,
-    width:20
+     
     
-  }
-  
+    
+  },
+ 
 })
