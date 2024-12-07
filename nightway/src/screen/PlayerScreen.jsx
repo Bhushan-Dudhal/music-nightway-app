@@ -138,6 +138,8 @@ const styles = StyleSheet.create({
     
     
   },
-  PlayPauseContainer
+  PlayPauseContainer: {
+    
+  }
  
 })
