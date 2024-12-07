@@ -10,6 +10,7 @@ import FloatingPlayear from '../components/FloatingPlayear'
 import PlayerRepeatToggle from '../components/PlayerRepeatToggle'
 import PlayerShuffleToggle from '../components/PlayerShuffleToggle'
 import PlayerProgressBar from '../components/PlayerProgressBar'
+import { GotoNextButton, GotoPreviousButton, PlayPauseButtton } from '../components/PlayearControls'
 
 
 const PlayerScreen = () => {
@@ -56,7 +57,13 @@ const PlayerScreen = () => {
 
       </View>
 
-      <PlayerProgressBar/>
+      <PlayerProgressBar />
+      <View style={styles.PlayPauseContainer}>
+        <GotoPreviousButton />
+        <PlayPauseButtton />
+        <GotoNextButton/>
+
+      </View>
        
       </View>
   )
@@ -131,5 +138,6 @@ const styles = StyleSheet.create({
     
     
   },
+  PlayPauseContainer
  
 })
