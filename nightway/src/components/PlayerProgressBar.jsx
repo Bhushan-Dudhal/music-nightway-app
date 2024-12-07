@@ -9,7 +9,7 @@ import { Slider } from 'react-native-awesome-slider';
 
 const PlayerProgressBar = () => {
 
-  const progress = useSharedValue(0.25);
+  const progress = useSharedValue(0.7);
   const min = useSharedValue(0);
   const max = useSharedValue(1);
   return (

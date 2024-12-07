@@ -6,7 +6,7 @@ import FontAwesome6 from "react-native-vector-icons/FontAwesome6"
 
 
 
- export const GotoPreviousButton = () => {
+ export const GotoPreviousButton = ({size=iconSizes.lg}) => {
     return (
         <TouchableOpacity activeOpacity={0.85}>
             <FontAwesome6 name={"backward-step"} size={iconSizes.md}  color={colors.iconPrimary} />
@@ -16,7 +16,7 @@ import FontAwesome6 from "react-native-vector-icons/FontAwesome6"
 }
 
 
-export const PlayPauseButtton = () => {
+export const PlayPauseButtton = ({size=iconSizes.lg}) => {
 
     const isPlaying=true
     return (
@@ -31,7 +31,7 @@ export const PlayPauseButtton = () => {
 
 
 
-export const GotoNextButton = () => {
+export const GotoNextButton = ({size=iconSizes.lg}) => {
     return (
         <TouchableOpacity activeOpacity={0.85}>
             <FontAwesome6 name={"forward-step"} size={iconSizes.md}  color={colors.iconPrimary} />

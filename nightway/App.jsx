@@ -18,7 +18,7 @@ const App = () => {
         headerShown:false
         }}
         initialRouteName='PLAYER_SCREEN'>
-      <Stack.Screen name='home' component={HomeScreen}/>
+      <Stack.Screen name='HOME_SCREEN' component={HomeScreen}/>
       <Stack.Screen name='LIKE_SCREEN' component={LikeScreen}/>
       <Stack.Screen name='PLAYER_SCREEN' component={PlayearScreen}/>
 

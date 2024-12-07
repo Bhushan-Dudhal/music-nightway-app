@@ -59,9 +59,9 @@ const PlayerScreen = () => {
 
       <PlayerProgressBar />
       <View style={styles.PlayPauseContainer}>
-        <GotoPreviousButton />
-        <PlayPauseButtton />
-        <GotoNextButton/>
+        <GotoPreviousButton size={iconSizes.xl} />
+        <PlayPauseButtton size={iconSizes.xl}/>
+        <GotoNextButton size={iconSizes.xl}/>
 
       </View>
        
@@ -135,11 +135,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: spacing.md,
      
-    
-    
   },
+
   PlayPauseContainer: {
-    flexDirection:"row"
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: spacing.xl,
+    
   }
  
 })
