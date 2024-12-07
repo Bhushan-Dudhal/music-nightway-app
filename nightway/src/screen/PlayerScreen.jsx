@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     
   },
   PlayPauseContainer: {
-    
+    flexDirection:"row"
   }
  
 })
