@@ -1,8 +1,9 @@
-import {  TouchableOpacity } from "react-native"
+import {  Text, TouchableOpacity } from "react-native"
 import { iconSizes } from "../constants/dimensions"
 import { colors } from "../constants/colors"
 
 import FontAwesome6 from "react-native-vector-icons/FontAwesome6"
+import { View } from "react-native-reanimated/lib/typescript/Animated"
 
 
 
@@ -22,7 +23,10 @@ export const PlayPauseButtton = ({size=iconSizes.lg}) => {
     return (
         <TouchableOpacity activeOpacity={0.85}>
 
-            <FontAwesome6 name={isPlaying?"pause":"play"} size={iconSizes.lg} color={colors.iconPrimary } />
+            <FontAwesome6 name={isPlaying ? "pause" : "play"} size={iconSizes.lg} color={colors.iconPrimary} />
+            <View>
+                <Text>new</Text>
+            </View>
 
         </TouchableOpacity>
     )
