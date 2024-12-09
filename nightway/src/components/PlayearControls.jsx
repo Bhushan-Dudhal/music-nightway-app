@@ -24,9 +24,7 @@ export const PlayPauseButtton = ({size=iconSizes.lg}) => {
         <TouchableOpacity activeOpacity={0.85}>
 
             <FontAwesome6 name={isPlaying ? "pause" : "play"} size={iconSizes.lg} color={colors.iconPrimary} />
-            <View>
-                <Text>new</Text>
-            </View>
+           
 
         </TouchableOpacity>
     )
