@@ -142,7 +142,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     gap: spacing.xl,
-    width:10
+    width: 10,
+    height:10
     
   }
  
