@@ -60,6 +60,6 @@ const styles = StyleSheet.create({
   },
   sliderContainer: {
     marginVertical: spacing.xl,
-    height:10
+   Path2D
   }
 })
