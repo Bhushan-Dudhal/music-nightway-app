@@ -37,7 +37,6 @@ export const GotoNextButton = ({size=iconSizes.lg}) => {
     return (
         <TouchableOpacity activeOpacity={0.85}>
             <FontAwesome6 name={"forward-step"} size={iconSizes.md}  color={colors.iconPrimary} />
-        <View><Text>new</Text></View>
         </TouchableOpacity>
     )
 }
