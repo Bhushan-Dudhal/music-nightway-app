@@ -19,7 +19,7 @@ const PlayerProgressBar = () => {
         <Text style={styles.timeText}>{"-" }04:0</Text>  
 
       </View> 
-      
+      <Text></Text>
     </View>
   )
 }
