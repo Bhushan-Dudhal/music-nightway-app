@@ -9,9 +9,9 @@ import { Slider } from 'react-native-awesome-slider';
 
 const PlayerProgressBar = () => {
 
-  const progress = useSharedValue(0.7);
-  const min = useSharedValue(0);
-  const max = useSharedValue(1);
+//   const progress = useSharedValue(0.7);
+//   const min = useSharedValue(0);
+//   const max = useSharedValue(1);
   return (
       <View>
           <View style={styles.timeRow}>
@@ -19,24 +19,7 @@ const PlayerProgressBar = () => {
         <Text style={styles.timeText}>{"-" }04:0</Text>  
 
       </View> 
-      <Slider
-      style={styles.sliderContainer}
-        containerStyle={{
-          height: 7,
-          borderRadius:spacing.sm
-        }}
-
-          theme={{
-    maximumTrackTintColor:colors.MaximumTintColor,
-    minimumTrackTintColor: colors.minimumTintColor,
-    
-  }}
-      progress={progress}
-      minimumValue={min}
-        maximumValue={max}
-           thumbWidth={18}
-        renderBubble={()=>null}
-    />
+      
     </View>
   )
 }
