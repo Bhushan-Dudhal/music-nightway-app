@@ -42,7 +42,6 @@ const styles = StyleSheet.create({
   },
   sliderContainer: {
     marginVertical: spacing.xl,
-    height:20
    
   }
 })
