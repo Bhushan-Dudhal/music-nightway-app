@@ -19,7 +19,6 @@ const PlayerProgressBar = () => {
         <Text style={styles.timeText}>{"-" }04:0</Text>  
 
       </View> 
-      <Text></Text>
     </View>
   )
 }
@@ -43,6 +42,7 @@ const styles = StyleSheet.create({
   },
   sliderContainer: {
     marginVertical: spacing.xl,
+    height:20
    
   }
 })
