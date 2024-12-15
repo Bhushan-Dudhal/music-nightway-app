@@ -29,6 +29,7 @@ export default StackNavigation
 
 const styles = StyleSheet.create({
   new: {
-   height:10
+    height: 10,
+    width:20
  }
 })
