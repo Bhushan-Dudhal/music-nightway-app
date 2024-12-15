@@ -41,7 +41,8 @@ const styles = StyleSheet.create({
     opacity:0.75,
   },
   sliderContainer: {
-    marginVertical: spacing.xl,width:20
+    marginVertical: spacing.xl,
+    width:10
    
   }
 })
