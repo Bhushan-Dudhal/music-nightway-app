@@ -69,5 +69,8 @@ const styles = StyleSheet.create({
         fontWeight: "700",
         padding: spacing.lg
              
+    },
+    new: {
+        color: colors.textPrimary,
     }
 })
