@@ -104,7 +104,8 @@ const styles = StyleSheet.create({
     paddingRight:spacing.lg
   },
   new: {
-    width:10
+    width: 10,
+    height:20
   }
   
 
