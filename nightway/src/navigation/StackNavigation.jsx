@@ -15,7 +15,7 @@ const StackNavigation = () => {
      <Stack.Navigator screenOptions={{
         headerShown:false
         }}
-        initialRouteName='HOME_SCREEN'>
+        initialRouteName='LIKE_SCREEN'>
       <Stack.Screen name='HOME_SCREEN' component={HomeScreen}/>
       <Stack.Screen name='LIKE_SCREEN' component={LikeScreen}/>
       <Stack.Screen name='PLAYER_SCREEN' component={PlayerScreen}/>
