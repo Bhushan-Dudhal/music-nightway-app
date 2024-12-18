@@ -43,6 +43,9 @@ const styles = StyleSheet.create({
     marginVertical: spacing.lg,
     paddingHorizontal:spacing.lg
   },
+  data: {
+    
+  }
 
   
 })
