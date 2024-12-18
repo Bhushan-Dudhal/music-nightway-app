@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     },
 
     new: {
-        
+      height:20  
     }
    
 })
