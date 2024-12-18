@@ -44,7 +44,8 @@ const styles = StyleSheet.create({
     paddingHorizontal:spacing.lg
   },
   data: {
-    height:20
+    height: 20,
+    width:20
   }
 
   
