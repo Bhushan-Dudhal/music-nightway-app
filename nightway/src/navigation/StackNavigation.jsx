@@ -32,5 +32,9 @@ const styles = StyleSheet.create({
     height: 10,
     width: 20,
     borderBlockColor:"red"
- }
+  },
+  new: {
+    height: 10,
+    margin:2
+  }
 })
