@@ -37,6 +37,6 @@ const styles = StyleSheet.create({
     height: 10,
     margin: 2,
     borderBlockColor: "red",
-    backgroundColor:"blue"
+    backgroundColor:"purple"
   }
 })
