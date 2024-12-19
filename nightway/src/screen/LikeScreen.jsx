@@ -72,7 +72,9 @@ const styles = StyleSheet.create({
     },
 
     new: {
-      height:20  
+        height: 20,
+        width:20
+        
     }
    
 })
