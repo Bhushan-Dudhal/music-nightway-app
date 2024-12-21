@@ -25,7 +25,7 @@ export default App
 const style = StyleSheet.create({
   new: {
     height: 20, 
-    width
+    width:
   }      
 })
 
