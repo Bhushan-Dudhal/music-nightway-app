@@ -26,7 +26,8 @@ const style = StyleSheet.create({
   new: {
     height: 20, 
     width: 30,
-    borderBlockColor:10
+    borderBlockColor: 10,
+    padding:2
   }      
 })
 
