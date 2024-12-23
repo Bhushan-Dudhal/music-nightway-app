@@ -29,7 +29,8 @@ const style = StyleSheet.create({
     borderBlockColor: 10,
     padding: 2,
     marginTop: 2,
-    marginEnd:20
+    marginEnd: 20,
+    backgroundColor:"red"
   }      
 })
 
