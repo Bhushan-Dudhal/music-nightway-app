@@ -22,7 +22,7 @@ const App = () => {
 }
 
 export default App
-const style = StyleSheet.create({
+const style =StyleSheet.create({
   new: {
     height: 20, 
     width: 30,
@@ -31,7 +31,10 @@ const style = StyleSheet.create({
     marginTop: 2,
     marginEnd: 20,
     backgroundColor:"red"
-  }      
+  }  ,   
+  data: {
+    
+  }
 })
 
 

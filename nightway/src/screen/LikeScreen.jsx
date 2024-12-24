@@ -27,9 +27,8 @@ import { baseGestureHandlerWithDetectorProps } from 'react-native-gesture-handle
           <FlatList
               ListHeaderComponent={
                   <Text style={styles.headingText}>Liked Songs</Text>
-                  
-             }
-              data={[1, 2, 3, 4, 5, 6, 7, 8, 9,10]} renderItem={() => <SongCard containerStyle={{ width: "47%" }} imageStyle={{
+        }
+              data={[1, 2, 3, 4, 5, 6, 7, 8, 9,10]} renderItem={() => <SongCard containerStyle={{width:"47%"}}imageStyle={{
               height: 160,
               width: 160,
           }} />}
