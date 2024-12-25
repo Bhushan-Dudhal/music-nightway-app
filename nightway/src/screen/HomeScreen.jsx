@@ -46,6 +46,9 @@ const styles = StyleSheet.create({
   data: {
     height: 20,
     width:20
+  },
+  neww: {
+    
   }
 
   
