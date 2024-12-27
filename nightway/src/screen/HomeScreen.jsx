@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
   neww: {
     height:20
     window:
+      new;
   }
 
   
