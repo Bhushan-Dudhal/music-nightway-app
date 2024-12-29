@@ -48,10 +48,10 @@ const styles = StyleSheet.create({
     width:20
   },
   neww: {
-    height:20
-    window:
-      new:
-    width:
+   
+  }
+  yes: {
+    
   }
 
   
