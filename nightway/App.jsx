@@ -35,7 +35,8 @@ const style =StyleSheet.create({
   data: {
     height: 20,
     width: 20,
-    borderBlockColor:20
+    borderBlockColor: 20,
+    padding: 2,
   }
 })
 
