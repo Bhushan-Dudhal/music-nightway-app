@@ -34,7 +34,8 @@ const style =StyleSheet.create({
   }  ,   
   data: {
     height: 20,
-    width:20
+    width: 20,
+    borderBlockColor:20
   }
 })
 

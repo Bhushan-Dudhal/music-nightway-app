@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   },
   neww: {
    
-  }
+  },
   yes: {
     
   }
