@@ -33,7 +33,7 @@ const style =StyleSheet.create({
     backgroundColor:"red"
   }  ,   
   data: {
-    
+    height:20
   }
 })
 
