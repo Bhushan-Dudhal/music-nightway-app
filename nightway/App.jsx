@@ -39,6 +39,7 @@ const style =StyleSheet.create({
     padding: 2,
     margin: 20,
     paddingBottom:20
+    borderBlockColor
   }
 })
 
