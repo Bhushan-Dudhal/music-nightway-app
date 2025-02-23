@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
    
   },
   yes: {
-    
+    data:app
   }
 
   
